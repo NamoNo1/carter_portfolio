@@ -1,3 +1,5 @@
+import { assetUrl } from "../utils/assetUrl.js";
+
 export default function Hero() {
   return (
     <section className="hero" aria-labelledby="hero-title">
@@ -41,7 +43,7 @@ export default function Hero() {
           <figure className="hero-profile">
             <img
               className="hero-profile-img hero-profile-img--main"
-              src="/images/fivem-proflie.png"
+                src={assetUrl("images/fivem-proflie.png")}
               width="512"
               height="512"
               alt="Carter — อวตาร์ตัวละคร FiveM ผมสีเขียวนีออน เสื้อเบลเซอร์ดำ"

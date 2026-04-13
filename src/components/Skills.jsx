@@ -1,3 +1,5 @@
+import { assetUrl } from "../utils/assetUrl.js";
+
 const icon = (src, alt = "") => (
   <img className="skill-icon-img" src={src} alt={alt} width="22" height="22" loading="lazy" decoding="async" />
 );
@@ -62,7 +64,7 @@ export default function Skills() {
                 <li>
                   <img
                     className="skill-icon-img skill-icon-img--fivem"
-                    src="/images/fivem-stack-icon.png"
+                    src={assetUrl("images/fivem-stack-icon.png")}
                     alt=""
                     width="22"
                     height="22"

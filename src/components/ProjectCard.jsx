@@ -1,3 +1,5 @@
+import { assetUrl } from "../utils/assetUrl.js";
+
 export default function ProjectCard({ project, onOpen }) {
   const { title, previewId, tag, year, teaser, withThumb, stack, gallery } = project;
 
@@ -33,7 +35,7 @@ export default function ProjectCard({ project, onOpen }) {
               {gallery.map((img) => (
                 <figure key={img.src} className="project-thumb">
                   <img
-                    src={img.src}
+                    src={assetUrl(img.src)}
                     alt={img.alt}
                     width="1200"
                     height="675"
@@ -46,7 +48,7 @@ export default function ProjectCard({ project, onOpen }) {
           ) : (
             <figure className="project-thumb">
               <img
-                src={gallery[0].src}
+                src={assetUrl(gallery[0].src)}
                 alt={gallery[0].alt}
                 width="1200"
                 height="675"

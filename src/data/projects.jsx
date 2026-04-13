@@ -11,7 +11,7 @@ export const projects = [
     stack: false,
     gallery: [
       {
-        src: "/images/project-shop-general-market.png",
+        src: "images/project-shop-general-market.png",
         alt: "NUI ร้านค้า General Market — แสดงยอดเงิน หมวดสินค้า ตะกร้า และชำระเงิน",
       },
     ],
@@ -65,7 +65,7 @@ export const projects = [
     stack: false,
     gallery: [
       {
-        src: "/images/project-mailbox.png",
+        src: "images/project-mailbox.png",
         alt: "NUI ระบบ Mailbox — กล่องข้อความในเกม FiveM",
       },
     ],
@@ -120,7 +120,7 @@ export const projects = [
     stack: false,
     gallery: [
       {
-        src: "/images/project-battle-pass.png",
+        src: "images/project-battle-pass.png",
         alt: "NUI ระบบ Battle Pass — Season 1 เลเวล EXP แทร็กรางวัลฟรีและพรีเมียม",
       },
     ],
@@ -175,7 +175,7 @@ export const projects = [
     stack: false,
     gallery: [
       {
-        src: "/images/project-skin-shop.png",
+        src: "images/project-skin-shop.png",
         alt: "NUI Skin Shop — แต่งตัวละคร แผงเสื้อผ้า ชุดที่บันทึก และปุ่มซื้อ",
       },
     ],
@@ -226,7 +226,7 @@ export const projects = [
     stack: false,
     gallery: [
       {
-        src: "/images/project-daily-login.png",
+        src: "images/project-daily-login.png",
         alt: "NUI Daily Login — กริดรางวัลรายวัน รางวัลรายชั่วโมง นับถอยหลัง และโหมด Normal / Premium",
       },
     ],
@@ -281,11 +281,11 @@ export const projects = [
     stack: true,
     gallery: [
       {
-        src: "/images/project-gang-system-list.png",
+        src: "images/project-gang-system-list.png",
         alt: "Gang & Family System — รายการแก๊ง กรอง All/Gang/Family ค้นหา และสร้างแก๊ง",
       },
       {
-        src: "/images/project-gang-system-detail.png",
+        src: "images/project-gang-system-detail.png",
         alt: "Gang & Family System — ภาพรวมแก๊ง สมาชิกหลักและสำรอง แรงก์และสถานะป้องกัน",
       },
     ],

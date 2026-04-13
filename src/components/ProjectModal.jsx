@@ -1,11 +1,12 @@
 import { useEffect, useRef } from "react";
+import { assetUrl } from "../utils/assetUrl.js";
 
 function ModalGallery({ images, stack }) {
   if (!images?.length) return null;
 
   const figures = images.map((img) => (
     <figure key={img.src} className="project-thumb">
-      <img src={img.src} alt={img.alt} width="1200" height="675" loading="lazy" decoding="async" />
+      <img src={assetUrl(img.src)} alt={img.alt} width="1200" height="675" loading="lazy" decoding="async" />
     </figure>
   ));
 

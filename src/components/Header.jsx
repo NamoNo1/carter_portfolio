@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { assetUrl } from "../utils/assetUrl.js";
 
 export default function Header() {
   const [navOpen, setNavOpen] = useState(false);
@@ -10,7 +11,7 @@ export default function Header() {
           <a className="header-avatar" href="#top" aria-label="Carter — กลับขึ้นบน">
             <img
               className="header-avatar-img"
-              src="/images/carter-profile.png"
+              src={assetUrl("images/carter-profile.png")}
               alt=""
               width="40"
               height="40"
