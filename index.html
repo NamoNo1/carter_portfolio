@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Carter (เตอร์) — Full Stack / FiveM Developer | พอร์ตโฟลิโอสมัครงาน"
+    />
+    <title>Carter | Developer Portfolio</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="apple-touch-icon" href="images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- <a class="skip-link" href="#main">ข้ามไปยังเนื้อหา</a> -->
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <div class="header-start">
+          <a class="header-avatar" href="#top" aria-label="Carter — กลับขึ้นบน">
+            <img
+              class="header-avatar-img"
+              src="images/carter-profile.png"
+              alt=""
+              width="40"
+              height="40"
+              loading="lazy"
+              decoding="async"
+            />
+          </a>
+          <a class="logo" href="#top" aria-label="กลับขึ้นบน"><span aria-hidden="true">&lt;</span>dev<span aria-hidden="true">/&gt;</span> Carter</a>
+        </div>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="เปิดเมนู"
+        >
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="เมนูหลัก">
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Tech Stack</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">สวัสดีครับ ผมคือ</p>
+            <h1 id="hero-title" class="hero-title">
+              <span class="hero-name">Carter</span>
+              <span class="hero-role">
+                <span class="hero-role-text">Full Stack · FiveM Developer</span>
+              </span>
+            </h1>
+            <p class="hero-tagline">ชื่อเล่น <strong>เตอร์</strong> · อายุ 18 ปี · เกิด 11 พ.ย. 2550</p>
+            <p class="hero-lead">
+              FiveM Developer
+              มีความเชี่ยวชาญในการพัฒนาระบบเซิร์ฟเวอร์ FiveM มีประสบการณ์การทำงานร่วมกับทีมอย่างเป็นระบบ สามารถรับบรีฟและดำเนินการตามแผนงาน จาก Project Manager ได้อย่างแม่นยำ มุ่งเน้นการเขียนโค้ดที่มีประสิทธิภาพการทำงานของระบบให้เสถียรที่สุด
+              และพร้อมที่จะเรียนรู้จากเพื่อนร่วมทีมเพื่อพัฒนาทักษะให้กับตัวเอง
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">ดูผลงาน</a>
+              <a class="btn btn-ghost" href="#contact">ติดต่อ</a>
+              <a
+                class="btn btn-link"
+                href="https://www.instagram.com/hxm_t3r/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </div>
+          </div>
+          <div class="hero-visual">
+            <figure class="hero-profile">
+              <img
+                class="hero-profile-img hero-profile-img--main"
+                src="images/fivem-proflie.png"
+                width="512"
+                height="512"
+                alt="Carter — อวตาร์ตัวละคร FiveM ผมสีเขียวนีออน เสื้อเบลเซอร์ดำ"
+                loading="eager"
+                decoding="async"
+                fetchpriority="high"
+              />
+            </figure>
+            <div class="code-window" aria-hidden="true">
+              <div class="code-window-header">
+                <span></span><span></span><span></span>
+              </div>
+              <pre class="code-snippet"><code><span class="kw">local</span> <span class="id">stack</span> = {
+  <span class="key">fivem</span> = <span class="str">'4y+'</span>,
+  <span class="key">web</span> = { <span class="str">'Vue'</span>, <span class="str">'React'</span> },
+  <span class="key">db</span> = { <span class="str">'MySQL'</span>, <span class="str">'MongoDB'</span> },
+}</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container narrow">
+          <h2 id="about-title" class="section-title">About Me</h2>
+          <p class="section-lead">
+            มีประสบการณ์เล่น FiveM ประมาณ 5 ปี และพัฒนาเป็น FiveM Developer ประมาณ 4 ปี
+            สนใจเรียนรู้และพัฒนาทักษะอย่างต่อเนื่องเพื่อเตรียมพร้อมสำหรับอาชีพในอนาคต
+          </p>
+          <div class="about-grid">
+            <div class="card about-card">
+              <h3>สิ่งที่ทำ</h3>
+              <p>
+                รับผิดชอบพัฒนาระบบตามแผนของหัวหน้าโปรเจกต์
+                ครอบคลุมทั้งฝั่งสคริปในเกม UI และการเชื่อมต่อกับฐานข้อมูล
+              </p>
+            </div>
+            <div class="card about-card">
+              <h3>เป้าหมาย</h3>
+              <p>
+                เสริมความรู้ด้านวิศวกรรมซอฟต์แวร์ควบคู่กับประสบการณ์จริงจากการทำงานจริง
+                พร้อมรับงานที่เน้นคุณภาพและการทำงานเป็นทีม
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <h2 id="skills-title" class="section-title">Tech Stack</h2>
+          <p class="section-lead narrow-text">
+            Skills และ Tools ที่ผมใช้ในการพัฒนา
+          </p>
+          <div class="skill-categories" aria-label="Tech stack แยกตามหมวด">
+            <div class="skill-category-col">
+              <div class="skill-category">
+                <h3 class="skill-category-title">Language</h3>
+                <ul class="skill-category-list">
+                  <li>
+                    <img
+                      class="skill-icon-img"
+                      src="https://cdn.simpleicons.org/lua/2C2D72"
+                      alt=""
+                      width="22"
+                      height="22"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span>Lua</span>
+                  </li>
+                  <li>
+                    <img
+                      class="skill-icon-img"
+                      src="https://cdn.simpleicons.org/html5/E34F26"
+                      alt=""
+                      width="22"
+                      height="22"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span>HTML</span>
+                  </li>
+                  <li>
+                    <img
+                      class="skill-icon-img"
+                      src="https://cdn.simpleicons.org/css/1572B6"
+                      alt=""
+                      width="22"
+                      height="22"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span>CSS</span>
+                  </li>
+                  <li>
+                    <img
+                      class="skill-icon-img"
+                      src="https://cdn.simpleicons.org/javascript/F7DF1E"
+                      alt=""
+                      width="22"
+                      height="22"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span>JavaScript</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="skill-category">
+                <h3 class="skill-category-title">Framework</h3>
+                <ul class="skill-category-list">
+                  <li>
+                    <img
+                      class="skill-icon-img"
+                      src="https://cdn.simpleicons.org/vuedotjs/4FC08D"
+                      alt=""
+                      width="22"
+                      height="22"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span>Vue.js</span>
+                  </li>
+                  <li>
+                    <img
+                      class="skill-icon-img"
+                      src="https://cdn.simpleicons.org/react/61DAFB"
+                      alt=""
+                      width="22"
+                      height="22"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span>React</span>
+                  </li>
+                  <li>
+                    <img
+                      class="skill-icon-img"
+                      src="https://cdn.simpleicons.org/vite/646CFF"
+                      alt=""
+                      width="22"
+                      height="22"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span>Vite</span>
+                  </li>
+                  <li>
+                    <img
+                      class="skill-icon-img"
+                      src="https://cdn.simpleicons.org/tailwindcss/06B6D4"
+                      alt=""
+                      width="22"
+                      height="22"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span>Tailwind CSS</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="skill-category-col">
+              <div class="skill-category">
+                <h3 class="skill-category-title">Platform</h3>
+                <ul class="skill-category-list">
+                  <li>
+                    <img
+                      class="skill-icon-img skill-icon-img--fivem"
+                      src="images/fivem-stack-icon.png"
+                      alt=""
+                      width="22"
+                      height="22"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span>FiveM Native</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="skill-category">
+                <h3 class="skill-category-title">Database</h3>
+                <ul class="skill-category-list">
+                  <li>
+                    <img
+                      class="skill-icon-img"
+                      src="https://cdn.simpleicons.org/mysql/4479A1"
+                      alt=""
+                      width="22"
+                      height="22"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span>MySQL</span>
+                  </li>
+                  <li>
+                    <img
+                      class="skill-icon-img"
+                      src="https://cdn.simpleicons.org/mongodb/47A248"
+                      alt=""
+                      width="22"
+                      height="22"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span>MongoDB</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="skill-category">
+                <h3 class="skill-category-title">Design</h3>
+                <ul class="skill-category-list">
+                  <li>
+                    <img
+                      class="skill-icon-img"
+                      src="https://cdn.simpleicons.org/figma/F24E1E"
+                      alt=""
+                      width="22"
+                      height="22"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span>Figma</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <h2 id="projects-title" class="section-title">Project</h2>
+          <p class="section-lead narrow-text">
+            โปรเจกต์พัฒนาระบบเซิร์ฟเวอร์ FiveM ที่เคยมีส่วนร่วมในฐานะ Junior Full Stack Developer
+          </p>
+          <div class="project-grid">
+            <article
+              class="card project-card project-card--compact project-card--with-thumb"
+              tabindex="0"
+              role="button"
+              data-detail-target="detail-shop"
+              data-project-title="General Market — Shop"
+              aria-labelledby="preview-title-shop"
+            >
+              <div class="project-card-media">
+                <figure class="project-thumb">
+                  <img
+                    src="images/project-shop-general-market.png"
+                    alt="NUI ร้านค้า General Market — แสดงยอดเงิน หมวดสินค้า ตะกร้า และชำระเงิน"
+                    width="1200"
+                    height="675"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </div>
+              <div class="project-card-preview">
+                  <div class="project-meta">
+                    <span class="project-tag">FiveM · NUI · Shop</span>
+                    <time datetime="2026">2026</time>
+                  </div>
+                  <h3 class="project-preview-title" id="preview-title-shop">General Market — Shop</h3>
+                  <p class="project-teaser">
+                    ร้านค้า NUI ธีมมืด — ตะกร้า ชำระเงิน ร่วมทีม Figma · Lua / Vue / Vite / Tailwind
+                  </p>
+                  <span class="project-card-hint">คลิกการ์ดเพื่ออ่านรายละเอียด</span>
+                </div>
+              <div id="detail-shop" class="project-card-detail" hidden>
+              <div class="project-card-body">
+                <div class="project-meta">
+                  <span class="project-tag">FiveM · NUI · Shop</span>
+                  <time datetime="2026">2026</time>
+                </div>
+                <h3>General Market — Shop</h3>
+                <p>
+                  ระบบร้านค้าในเกม (NUI) ธีมมืดสไตล์แดชบอร์ด แบ่งโซนยอดเงิน หมวดสินค้า กริดไอเทม
+                  ตะกร้า และเลือกชำระด้วยเงินสดหรือธนาคาร พร้อมปุ่มสั่งซื้อ
+                </p>
+                <p>
+                  ได้ทำงานร่วมกับทีมออกแบบ UI จาก <strong>Figma</strong>
+                  โดยประสานงานจากไฟล์ดีไซน์มาพัฒนาเป็นหน้า NUI ให้ตรงเลย์เอาต์ สี คอมโพเนนต์ และสถานะต่าง ๆ ตามที่ทีมดีไซน์กำหนด
+                </p>
+                <p>
+                  <strong class="project-inline-label">เทคโนโลยี:</strong>
+                  เขียนด้วย <strong>Lua</strong> (ฝั่ง FiveM client/server),
+                  <strong>Vue.js</strong> จัด state ของตะกร้าและ UI,
+                  บันเดิลด้วย <strong>Vite</strong>,
+                  สไตล์ด้วย <strong>Tailwind CSS</strong> ร่วมกับ <strong>HTML</strong> และ <strong>CSS</strong>,
+                  <strong>JavaScript</strong> เชื่อมสื่อสารกับ Lua ผ่าน NUI
+                </p>
+                <p>
+                  <strong class="project-inline-label">วิธีการพัฒนา:</strong>
+                  เมื่อเปิดร้าน Lua ฝั่ง client ส่งข้อมูลสินค้าและยอดเงินผู้เล่นเข้า Vue ผ่านข้อความ NUI
+                  ผู้ใช้เลือกหมวด ค้นหา และเพิ่มของในตะกร้า — Vue คำนวณยอดรวมในเบราว์เซอร์โดยไม่ต้องวนกลับเซิร์ฟทุกคลิก
+                  กดซื้อแล้ว frontend ส่ง callback กลับไปที่ Lua client แล้วต่อไปยัง server เพื่อตรวจสอบเงิน
+                  หักบัญชี อัปเดตฐานข้อมูล และมอบไอเทม — แยกชั้นชัดระหว่าง UI (Vue) กับ logic เกม (Lua) ตามแพตเทิร์น NUI ของ FiveM
+                </p>
+                <ul class="project-tech">
+                  <li>Lua</li>
+                  <li>Vue.js</li>
+                  <li>Vite</li>
+                  <li>Tailwind CSS</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Figma</li>
+                </ul>
+              </div>
+              </div>
+            </article>
+            <article
+              class="card project-card project-card--compact project-card--with-thumb"
+              tabindex="0"
+              role="button"
+              data-detail-target="detail-mailbox"
+              data-project-title="Mailbox"
+              aria-labelledby="preview-title-mailbox"
+            >
+              <div class="project-card-media">
+                <figure class="project-thumb">
+                  <img
+                    src="images/project-mailbox.png"
+                    alt="NUI ระบบ Mailbox — กล่องข้อความในเกม FiveM"
+                    width="1200"
+                    height="675"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </div>
+              <div class="project-card-preview">
+                  <div class="project-meta">
+                    <span class="project-tag">FiveM · NUI · Mailbox</span>
+                    <time datetime="2026">2026</time>
+                  </div>
+                  <h3 class="project-preview-title" id="preview-title-mailbox">Mailbox</h3>
+                  <p class="project-teaser">
+                    กล่องจดหมาย NUI — อ่าน ส่ง จัดการข้อความ ซิงค์กับ Lua / Vue / Figma
+                  </p>
+                  <span class="project-card-hint">คลิกการ์ดเพื่ออ่านรายละเอียด</span>
+                </div>
+              <div id="detail-mailbox" class="project-card-detail" hidden>
+              <div class="project-card-body">
+                <div class="project-meta">
+                  <span class="project-tag">FiveM · NUI · Mailbox</span>
+                  <time datetime="2026">2026</time>
+                </div>
+                <h3>Mailbox</h3>
+                <p>
+                  ระบบกล่องจดหมายในเกม (NUI) สำหรับอ่าน ส่ง และจัดการข้อความจากระบบหรือผู้เล่น
+                  แสดงสถานะอ่านแล้ว/ยังไม่อ่าน แจ้งเตือน และรายละเอียดแต่ละฉบับ
+                  ใช้ภาษาออกแบบธีมมืดและเน้นสีไฮไลต์ให้สอดคล้องกับ UI ชุดเดียวกับระบบอื่นบนเซิร์ฟเวอร์
+                </p>
+                <p>
+                  ได้ทำงานร่วมกับทีมออกแบบ UI จาก <strong>Figma</strong>
+                  นำสเปกเลย์เอาต์และคอมโพเนนต์จากดีไซน์มา implement เป็นหน้า NUI ให้ใช้งานจริงในเกม
+                </p>
+                <p>
+                  <strong class="project-inline-label">เทคโนโลยี:</strong>
+                  <strong>Lua</strong> ฝั่ง FiveM (client/server) เปิด UI และซิงค์ข้อมูลจดหมาย,
+                  <strong>Vue.js</strong> จัด state รายการและรายละเอียดจดหมาย,
+                  <strong>Vite</strong> สำหรับบันเดิล frontend,
+                  <strong>Tailwind CSS</strong> ร่วมกับ <strong>HTML</strong> และ <strong>CSS</strong> สำหรับเลย์เอาต์และธีม,
+                  <strong>JavaScript</strong> เชื่อม NUI กับ Lua
+                </p>
+                <p>
+                  <strong class="project-inline-label">วิธีการพัฒนา:</strong>
+                  เมื่อเปิดกล่องจดหมาย Lua client ดึงข้อมูลจาก server แล้วส่งรายการจดหมายเข้า Vue ผ่าน NUI message
+                  ผู้เล่นเลือกอ่าน ลบ หรือรับของแนบ — การกระทำที่มีผลกับข้อมูลในเซิร์ฟเวอร์จะส่ง callback จาก Vue ไปยัง Lua
+                  แล้วให้ server ตรวจสอบสิทธิ์ อัปเดตฐานข้อมูล และตอบกลับผลให้ UI รีเฟรชสถานะ
+                  แยกการแสดงผล (Vue) กับ business logic และความปลอดภัย (Lua/server) ชัดเจน
+                </p>
+                <ul class="project-tech">
+                  <li>Lua</li>
+                  <li>Vue.js</li>
+                  <li>Vite</li>
+                  <li>Tailwind CSS</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Figma</li>
+                </ul>
+              </div>
+              </div>
+            </article>
+            <article
+              class="card project-card project-card--compact project-card--with-thumb"
+              tabindex="0"
+              role="button"
+              data-detail-target="detail-battlepass"
+              data-project-title="Battle Pass"
+              aria-labelledby="preview-title-battlepass"
+            >
+              <div class="project-card-media">
+                <figure class="project-thumb">
+                  <img
+                    src="images/project-battle-pass.png"
+                    alt="NUI ระบบ Battle Pass — Season 1 เลเวล EXP แทร็กรางวัลฟรีและพรีเมียม"
+                    width="1200"
+                    height="675"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </div>
+              <div class="project-card-preview">
+                  <div class="project-meta">
+                    <span class="project-tag">FiveM · NUI · Battle Pass</span>
+                    <time datetime="2026">2026</time>
+                  </div>
+                  <h3 class="project-preview-title" id="preview-title-battlepass">Battle Pass</h3>
+                  <p class="project-teaser">
+                    ซีซัน NUI — แทร็กฟรี/พรีเมียม EXP เควส และรางวัลแบบกริด
+                  </p>
+                  <span class="project-card-hint">คลิกการ์ดเพื่ออ่านรายละเอียด</span>
+                </div>
+              <div id="detail-battlepass" class="project-card-detail" hidden>
+              <div class="project-card-body">
+                <div class="project-meta">
+                  <span class="project-tag">FiveM · NUI · Battle Pass</span>
+                  <time datetime="2026">2026</time>
+                </div>
+                <h3>Battle Pass</h3>
+                <p>
+                  หน้า Battle Pass แบบ NUI ธีมมืดสำหรับซีซันในเซิร์ฟเวอร์ แสดงชื่อซีซัน เวลาเหลือ ช่วงวันที่
+                  เลเวลและแถบ EXP จากเควส ปุ่มปลดล็อกพาส และแทร็กรางวัลสองชั้น (ฟรี / พรีเมียม) แบบกริด
+                  พร้อมไฮไลต์เลเวลที่ปลดล็อกแล้วและของรางวัลแต่ละขั้น
+                </p>
+                <p>
+                  ได้ทำงานร่วมกับทีมออกแบบ UI จาก <strong>Figma</strong>
+                  ถ่ายทอดดีไซน์แถบความคืบหน้า การ์ดรางวัล และจุดไฮไลต์สีฟ้า–ทองให้ตรงกับสเปกบน Figma
+                </p>
+                <p>
+                  <strong class="project-inline-label">เทคโนโลยี:</strong>
+                  <strong>Lua</strong> (FiveM client/server) ส่งข้อมูลซีซัน เลเวล EXP สถานะการรับรางวัล และสิทธิ์พรีเมียม,
+                  <strong>Vue.js</strong> จัด state แทร็กและคอมโพเนนต์การ์ดรางวัล,
+                  <strong>Vite</strong> บันเดิล frontend,
+                  <strong>Tailwind CSS</strong> ร่วมกับ <strong>HTML</strong> และ <strong>CSS</strong> สำหรับ grid และเอฟเฟกต์โกลว์,
+                  <strong>JavaScript</strong> เชื่อม NUI กับ Lua
+                </p>
+                <p>
+                  <strong class="project-inline-label">วิธีการพัฒนา:</strong>
+                  ตอนเปิด UI server ส่งสถานะผู้เล่นใน Battle Pass ปัจจุบัน (เลเวล, EXP, รางวัลที่กดรับแล้ว, ซื้อพรีเมียมหรือยัง)
+                  เข้า Vue เพื่อเรนเดอร์แทร็กและปุ่มต่าง ๆ
+                  การกดรับรางวัลหรือปลดล็อกพาสจะส่ง event จาก Vue ไป Lua client แล้วไป server เพื่อตรวจเงื่อนไข
+                  อัปเดตฐานข้อมูลและแจกของ — ข้อมูลสำคัญไม่เชื่อถือจากฝั่ง UI อย่างเดียว แยกการแสดงผลกับ logic รางวัลชัดเจน
+                </p>
+                <ul class="project-tech">
+                  <li>Lua</li>
+                  <li>Vue.js</li>
+                  <li>Vite</li>
+                  <li>Tailwind CSS</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Figma</li>
+                </ul>
+              </div>
+              </div>
+            </article>
+            <article
+              class="card project-card project-card--compact project-card--with-thumb"
+              tabindex="0"
+              role="button"
+              data-detail-target="detail-skinshop"
+              data-project-title="Skin Shop"
+              aria-labelledby="preview-title-skinshop"
+            >
+              <div class="project-card-media">
+                <figure class="project-thumb">
+                  <img
+                    src="images/project-skin-shop.png"
+                    alt="NUI Skin Shop — แต่งตัวละคร แผงเสื้อผ้า ชุดที่บันทึก และปุ่มซื้อ"
+                    width="1200"
+                    height="675"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </div>
+              <div class="project-card-preview">
+                  <div class="project-meta">
+                    <span class="project-tag">FiveM · NUI · Skin Shop</span>
+                    <time datetime="2026">2026</time>
+                  </div>
+                  <h3 class="project-preview-title" id="preview-title-skinshop">Skin Shop</h3>
+                  <p class="project-teaser">
+                    แต่งตัวละคร NUI — Clothes Panel พรีวิว ped ในเกม บันทึกและซื้อชุด
+                  </p>
+                  <span class="project-card-hint">คลิกการ์ดเพื่ออ่านรายละเอียด</span>
+                </div>
+              <div id="detail-skinshop" class="project-card-detail" hidden>
+              <div class="project-card-body">
+                <div class="project-meta">
+                  <span class="project-tag">FiveM · NUI · Skin Shop</span>
+                  <time datetime="2026">2026</time>
+                </div>
+                <h3>Skin Shop</h3>
+                <p>
+                  หน้าปรับแต่งตัวละครแบบ NUI ธีมมืดโทนฟ้าไซแบน มีเมนูหมวดชิ้นส่วนร่างกายทางซ้าย
+                  แผง Clothes Panel ปรับ drawable / texture (เลขชุดและลาย) ทีละแถว แสดงราคารวม ตั้งชื่อชุด บันทึกและซื้อ
+                  โซนกลางว่างสำหรับแสดงโมเดล 3D ในเกม พร้อมคำแนะนำหมุนตัวละครและมุมกล้อง และรายการชุดที่เซฟไว้พร้อมปุ่มสวมใส่
+                </p>
+                <p>
+                  ได้ทำงานร่วมกับทีมออกแบบ UI จาก <strong>Figma</strong>
+                  ให้เลย์เอาต์แผงลอย มุมโค้ง พื้นหลังโปร่ง และจุดไฮไลต์สีฟ้าตรงกับดีไซน์
+                </p>
+                <p>
+                  <strong class="project-inline-label">เทคโนโลยี:</strong>
+                  <strong>Lua</strong> (client) สั่งเปลี่ยน component บนตัวละครแบบเรียลไทม์ตามค่าที่ UI ส่งมา และสื่อสารกับ server เมื่อซื้อ/บันทึก,
+                  <strong>Vue.js</strong> จัด state ของแต่ละชิ้นเสื้อผ้าและชุดที่บันทึก,
+                  <strong>Vite</strong>, <strong>Tailwind CSS</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> สำหรับหน้า NUI และการเชื่อม callback
+                </p>
+                <p>
+                  <strong class="project-inline-label">วิธีการพัฒนา:</strong>
+                  การเปลี่ยนค่าในแผงเป็นขั้นตอนลูปคลิเอนต์: UI ส่งค่า drawable/texture ไป Lua เพื่ออัปเดต ped ทันที (พรีวิว)
+                  เมื่อกดซื้อหรือเซฟชุด ระบบส่งข้อมูลไป server ตรวจเงินและสิทธิ์ แล้วค่อยยืนยันลงฐานข้อมูลและซิงค์ลุคให้ผู้เล่น
+                  แยกพรีวิวฝั่งเกมกับธุรกรรมที่ต้องตรวจบน server เพื่อกันคนแก้ค่าในเบราว์เซอร์
+                </p>
+                <ul class="project-tech">
+                  <li>Lua</li>
+                  <li>Vue.js</li>
+                  <li>Vite</li>
+                  <li>Tailwind CSS</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Figma</li>
+                </ul>
+              </div>
+              </div>
+            </article>
+            <article
+              class="card project-card project-card--compact project-card--with-thumb"
+              tabindex="0"
+              role="button"
+              data-detail-target="detail-dailylogin"
+              data-project-title="Daily Login"
+              aria-labelledby="preview-title-dailylogin"
+            >
+              <div class="project-card-media">
+                <figure class="project-thumb">
+                  <img
+                    src="images/project-daily-login.png"
+                    alt="NUI Daily Login — กริดรางวัลรายวัน รางวัลรายชั่วโมง นับถอยหลัง และโหมด Normal / Premium"
+                    width="1200"
+                    height="675"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </div>
+              <div class="project-card-preview">
+                  <div class="project-meta">
+                    <span class="project-tag">FiveM · NUI · Daily Login</span>
+                    <time datetime="2026">2026</time>
+                  </div>
+                  <h3 class="project-preview-title" id="preview-title-dailylogin">Daily Login</h3>
+                  <p class="project-teaser">
+                    ล็อกอินรายวัน — กริด 31 วัน รางวัลรายชม. Normal / Premium
+                  </p>
+                  <span class="project-card-hint">คลิกการ์ดเพื่ออ่านรายละเอียด</span>
+                </div>
+              <div id="detail-dailylogin" class="project-card-detail" hidden>
+              <div class="project-card-body">
+                <div class="project-meta">
+                  <span class="project-tag">FiveM · NUI · Daily Login</span>
+                  <time datetime="2026">2026</time>
+                </div>
+                <h3>Daily Login</h3>
+                <p>
+                  ระบบล็อกอินรายวันแบบ NUI ธีมมืด แบ่งแถบซ้ายแสดงโปรไฟล์ เวลาออนไลน์
+                  ตัวนับถอยหลังจนกว่าจะกดรับรางวัลได้อีกครั้ง แถวรางวัลตามชั่วโมงที่ออนไลน์
+                  สลับประเภทรางวัล Normal / Premium และข้อมูลรีเซ็ตรอบ
+                  ด้านขวาเป็นกริดการ์ด DAY 1–31 แสดงสถานะรับแล้ว วันปัจจุบัน หรือยังล็อก พร้อมไอคอนรางวัลและจำนวน
+                </p>
+                <p>
+                  ได้ทำงานร่วมกับทีมออกแบบ UI จาก <strong>Figma</strong>
+                  ให้สีไฮไลต์ฟ้า–ทอง ขอบการ์ด และสถานะแต่ละวันตรงกับดีไซน์
+                </p>
+                <p>
+                  <strong class="project-inline-label">เทคโนโลยี:</strong>
+                  <strong>Lua</strong> (FiveM client/server) ซิงค์เวลาเซิร์ฟเวอร์ สถานะการกดรับ และแจกของ,
+                  <strong>Vue.js</strong> จัด state กริดวัน แท็บรางวัล และตัวจับเวลา,
+                  <strong>Vite</strong>, <strong>Tailwind CSS</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> สำหรับหน้า NUI
+                </p>
+                <p>
+                  <strong class="project-inline-label">วิธีการพัฒนา:</strong>
+                  Server เป็นตัวกำหนดว่าวันไหนรับได้แล้ว เหลือเวลากี่วินาทีถึงรอบถัดไป และรางวัลแต่ละช่อง
+                  ส่งข้อมูลเข้า Vue เพื่อแสดงผลและนับถอยหลังฝั่ง client ให้ลื่นตา
+                  เมื่อผู้เล่นกดรับ Vue ส่ง callback ไป Lua → server ตรวจเงื่อนไข (วัน ซ้ำ สิทธิ์พรีเมียม) แล้วค่อยอัปเดต DB และตอบกลับให้ UI รีเฟรช
+                  ป้องกันการกดรับซ้ำหรือข้ามวันโดยไม่ผ่านการตรวจบน server
+                </p>
+                <ul class="project-tech">
+                  <li>Lua</li>
+                  <li>Vue.js</li>
+                  <li>Vite</li>
+                  <li>Tailwind CSS</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Figma</li>
+                </ul>
+              </div>
+              </div>
+            </article>
+            <article
+              class="card project-card project-card--compact project-card--with-thumb"
+              tabindex="0"
+              role="button"
+              data-detail-target="detail-gang"
+              data-project-title="Gang Manage System"
+              aria-labelledby="preview-title-gang"
+            >
+              <div class="project-card-media">
+                <div class="project-thumbs-stack">
+                  <figure class="project-thumb">
+                    <img
+                      src="images/project-gang-system-list.png"
+                      alt="Gang &amp; Family System — รายการแก๊ง กรอง All/Gang/Family ค้นหา และสร้างแก๊ง"
+                      width="1200"
+                      height="675"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </figure>
+                  <figure class="project-thumb">
+                    <img
+                      src="images/project-gang-system-detail.png"
+                      alt="Gang &amp; Family System — ภาพรวมแก๊ง สมาชิกหลักและสำรอง แรงก์และสถานะป้องกัน"
+                      width="1200"
+                      height="675"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </figure>
+                </div>
+              </div>
+              <div class="project-card-preview">
+                  <div class="project-meta">
+                    <span class="project-tag">FiveM · NUI · Gang / Family</span>
+                    <time datetime="2026">2026</time>
+                  </div>
+                  <h3 class="project-preview-title" id="preview-title-gang">Gang Manage System</h3>
+                  <p class="project-teaser">
+                    แก๊ง &amp; ครอบครัว — รายการ กรอง รายละเอียดสมาชิก และสถานะป้องกัน
+                  </p>
+                  <span class="project-card-hint">คลิกการ์ดเพื่ออ่านรายละเอียด</span>
+                </div>
+              <div id="detail-gang" class="project-card-detail" hidden>
+              <div class="project-card-body">
+                <div class="project-meta">
+                  <span class="project-tag">FiveM · NUI · Gang / Family</span>
+                  <time datetime="2026">2026</time>
+                </div>
+                <h3>Gang Manage System</h3>
+                <p>
+                  ระบบจัดการแก๊งและครอบครัว (GANG &amp; FAMILY SYSTEM) แบบ NUI ธีมมืดโทนฟ้า
+                  หน้าแรกเป็นรายการพร้อมกรอง All / Gang / Family ค้นหา สร้างแก๊ง และตารางแสดงโลโก้ สี ชื่อ หัวหน้า
+                  สถานะป้องกัน แรงก์ จำนวนสมาชิก และดูรายละเอียด
+                  หน้าภายในแสดงข้อมูลแก๊ง เปอร์เซ็นต์ สมาชิกหลัก–สำรอง บทบาท แท็บ Overview / Activity / Story และแถบสถานะ Active Protection
+                </p>
+                <p>
+                  ได้ทำงานร่วมกับทีมออกแบบ UI จาก <strong>Figma</strong>
+                  ให้ sidebar ไอคอน แถบแท็บ ตารางสมาชิก และสีเน้นตรงกับดีไซน์
+                </p>
+                <p>
+                  <strong class="project-inline-label">เทคโนโลยี:</strong>
+                  <strong>Lua</strong> (FiveM client/server) ดึงรายการแก๊ง สิทธิ์ผู้เล่น การย้ายแรงก์ และอัปเดตสมาชิก,
+                  <strong>Vue.js</strong> จัด state ตาราง ตัวกรอง และหน้ารายละเอียด,
+                  <strong>Vite</strong>, <strong>Tailwind CSS</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> สำหรับ NUI
+                </p>
+                <p>
+                  <strong class="project-inline-label">วิธีการพัฒนา:</strong>
+                  ข้อมูลแก๊งและสมาชิกถูกยืนยันบน server — UI ใช้แสดงและส่งคำสั่ง (สร้าง คำเชิญ แต่งตั้งบทบาท ออกจากแก๊ง)
+                  ทุก action สำคัญส่งผ่าน NUI callback ไป Lua แล้วให้ server ตรวจสิทธิ์และอัปเดตฐานข้อมูล
+                  ลดความเสี่ยงจากการแก้ state ในเบราว์เซอร์โดยไม่ผ่านการตรวจสอบ
+                </p>
+                <ul class="project-tech">
+                  <li>Lua</li>
+                  <li>Vue.js</li>
+                  <li>Vite</li>
+                  <li>Tailwind CSS</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Figma</li>
+                </ul>
+              </div>
+              </div>
+            </article>
+            <article
+              class="card project-card project-card--compact"
+              tabindex="0"
+              role="button"
+              data-detail-target="detail-wavevy"
+              data-project-title="WAVEVY CITY"
+              aria-labelledby="preview-title-wavevy"
+            >
+                <div class="project-card-preview">
+                  <div class="project-meta">
+                    <span class="project-tag">FiveM · Full Stack</span>
+                    <time datetime="2026">2026</time>
+                  </div>
+                  <h3 class="project-preview-title" id="preview-title-wavevy">WAVEVY CITY</h3>
+                  <p class="project-teaser">Junior Full Stack — พัฒนาระบบตามแผนหัวหน้าโปรเจกต์</p>
+                  <span class="project-card-hint">คลิกการ์ดเพื่ออ่านรายละเอียด</span>
+                </div>
+              <div id="detail-wavevy" class="project-card-detail" hidden>
+                <div class="project-card-body">
+                  <div class="project-meta">
+                    <span class="project-tag">FiveM · Full Stack</span>
+                    <time datetime="2026">2026</time>
+                  </div>
+                  <h3>WAVEVY CITY</h3>
+                  <p>
+                    ทำงานเป็นจูเนียร์ดีเวลอปเปอร์ พัฒนาระบบตามแผนของหัวหน้าโปรเจกต์
+                    เน้นการส่งมอบฟีเจอร์ที่สอดคล้องกับทิศทางของทีม
+                  </p>
+                  <ul class="project-tech">
+                    <li>Lua</li>
+                    <li>Vue.js</li>
+                    <li>JavaScript</li>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                    <li>MySQL</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+            <article
+              class="card project-card project-card--compact"
+              tabindex="0"
+              role="button"
+              data-detail-target="detail-luv"
+              data-project-title="LUV TOWN"
+              aria-labelledby="preview-title-luv"
+            >
+                <div class="project-card-preview">
+                  <div class="project-meta">
+                    <span class="project-tag">FiveM · Full Stack</span>
+                    <time datetime="2025">2025</time>
+                  </div>
+                  <h3 class="project-preview-title" id="preview-title-luv">LUV TOWN</h3>
+                  <p class="project-teaser">Junior Full Stack — ประสาน PM และหัวหน้าโปรเจกต์</p>
+                  <span class="project-card-hint">คลิกการ์ดเพื่ออ่านรายละเอียด</span>
+                </div>
+              <div id="detail-luv" class="project-card-detail" hidden>
+                <div class="project-card-body">
+                  <div class="project-meta">
+                    <span class="project-tag">FiveM · Full Stack</span>
+                    <time datetime="2025">2025</time>
+                  </div>
+                  <h3>LUV TOWN</h3>
+                  <p>
+                    จูเนียร์ดีเวลอปเปอร์ พัฒนาระบบตามแผนของหัวหน้าโปรเจกต์และโปรเจกต์เมเนเจอร์
+                    ประสานงานตามสโคปที่กำหนด
+                  </p>
+                  <ul class="project-tech">
+                    <li>Lua</li>
+                    <li>Vue.js</li>
+                    <li>JavaScript</li>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                    <li>MySQL</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+            <article
+              class="card project-card project-card--compact"
+              tabindex="0"
+              role="button"
+              data-detail-target="detail-og"
+              data-project-title="OG CITY"
+              aria-labelledby="preview-title-og"
+            >
+                <div class="project-card-preview">
+                  <div class="project-meta">
+                    <span class="project-tag">FiveM · Full Stack</span>
+                    <time datetime="2024">2024</time>
+                  </div>
+                  <h3 class="project-preview-title" id="preview-title-og">OG CITY</h3>
+                  <p class="project-teaser">Junior Full Stack — สะสมประสบการณ์เซิร์ฟเวอร์จริง</p>
+                  <span class="project-card-hint">คลิกการ์ดเพื่ออ่านรายละเอียด</span>
+                </div>
+              <div id="detail-og" class="project-card-detail" hidden>
+                <div class="project-card-body">
+                  <div class="project-meta">
+                    <span class="project-tag">FiveM · Full Stack</span>
+                    <time datetime="2024">2024</time>
+                  </div>
+                  <h3>OG CITY</h3>
+                  <p>
+                    จูเนียร์ดีเวลอปเปอร์ พัฒนาระบบตามแผนของหัวหน้าโปรเจกต์
+                    สะสมประสบการณ์จากโปรเจกต์เซิร์ฟเวอร์จริง
+                  </p>
+                  <ul class="project-tech">
+                    <li>Lua</li>
+                    <li>Vue.js</li>
+                    <li>JavaScript</li>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                    <li>MySQL</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="experience" aria-labelledby="exp-title">
+        <div class="container narrow">
+          <h2 id="exp-title" class="section-title">Experience And Education</h2>
+
+          <h3 class="subsection-title">Work Experience</h3>
+          <ol class="timeline">
+            <li class="timeline-item">
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-body">
+                <h3>Junior Full Stack Developer</h3>
+                <p class="timeline-place">WAVEVY CITY · 2026 — ปัจจุบัน</p>
+                <p>
+                  พัฒนาระบบตามแผนของหัวหน้าโปรเจกต์ รับผิดชอบฟีเจอร์และการเชื่อมต่อระบบภายในทีม
+                </p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-body">
+                <h3>Junior Full Stack Developer</h3>
+                <p class="timeline-place">LUV TOWN · 2025</p>
+                <p>
+                  พัฒนาระบบตามแผนของหัวหน้าโปรเจกต์และโปรเจกต์เมเนเจอร์
+                </p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-body">
+                <h3>Junior Full Stack Developer</h3>
+                <p class="timeline-place">OG CITY · 2024</p>
+                <p>
+                  พัฒนาระบบตามแผนของหัวหน้าโปรเจกต์
+                </p>
+              </div>
+            </li>
+          </ol>
+
+          <h3 class="subsection-title">Education</h3>
+          <ol class="timeline">
+            <li class="timeline-item">
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-body">
+                <h3>กำลังเข้าศึกษาระดับปริญญาตรี</h3>
+                <p class="timeline-place">สาขาวิศวกรรมซอฟต์แวร์ (ชั้นปีที่ 1) · เริ่ม 2026</p>
+                <p>
+                  กำลังเข้าศึกษาในระดับอุดมศึกษา สายวิศวกรรมซอฟต์แวร์
+                </p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-body">
+                <h3>จบการศึกษาระดับมัธยมศึกษาตอนปลาย</h3>
+                <p class="timeline-place">โรงเรียนสวนกุหลาบวิทยาลัย สระบุรี · แผนการเรียนวิทยาศาสตร์–คณิตศาสตร์ · 2026</p>
+                <p>
+                  สำเร็จการศึกษาระดับชั้นมัธยมศึกษาปีที่ 6
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="container narrow">
+          <h2 id="contact-title" class="section-title">Contact Me</h2>
+          <p class="section-lead">
+            ติดต่องานหรือสอบถามเพิ่มเติมได้ตามช่องทางด้านล่าง
+          </p>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-label">โทรศัพท์</span>
+              <span class="contact-value"
+                >080-894-2607</span
+              >
+            </li>
+            <li>
+              <span class="contact-label">อีเมล</span>
+              <span class="contact-value"
+              >supercats5456@gmail.com</span
+            >
+            </li>
+            <li>
+              <span class="contact-label">ที่อยู่</span>
+              <span class="contact-value"
+                >52/3 หมู่ 1 ตำบลปากเพรียว อำเภอเมือง จังหวัดสระบุรี 18000</span
+              >
+            </li>
+            <li>
+              <span class="contact-label">Instagram</span>
+              <a href="https://www.instagram.com/hxm_t3r/" target="_blank" rel="noopener noreferrer">@hxm_t3r</a>
+            </li>
+            <li>
+              <span class="contact-label">Discord</span>
+              <span class="contact-value mono">.namoputtaya</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <div
+      id="project-modal"
+      class="project-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="project-modal-title"
+      hidden
+    >
+      <button type="button" class="project-modal-backdrop" data-project-modal-close tabindex="-1" aria-hidden="true"></button>
+      <div class="project-modal-panel">
+        <button type="button" class="project-modal-close" data-project-modal-close aria-label="ปิด">×</button>
+        <h2 id="project-modal-title" class="project-modal-title"></h2>
+        <div class="project-modal-body"></div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Carter (เตอร์) · Portfolio</p>
+        <button type="button" class="to-top" aria-label="กลับขึ้นบน">↑</button>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
