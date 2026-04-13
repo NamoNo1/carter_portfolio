@@ -1,8 +1,18 @@
+# Deploy ไป GitHub Pages
+#
+# ครั้งแรกต้องตั้งค่า repo (ทำครั้งเดียว):
+# 1. GitHub repo → Settings → Pages
+# 2. ที่ "Build and deployment" → Source: เลือก "GitHub Actions" (ไม่ใช่ Deploy from a branch)
+# 3. บันทึก แล้ว push หรือรัน workflow ใหม่ (Actions → Deploy to GitHub Pages → Run workflow)
+#
+# หมายเหตุ: ตัวเลือก enablement ใน configure-pages ต้องใช้ PAT แยก ไม่ใช่ GITHUB_TOKEN — จึงให้เปิด Pages ใน Settings แทน
+
 name: Deploy to GitHub Pages
 
 on:
   push:
     branches: [main, master]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -23,20 +33,25 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Prepare site bundle
-        run: |
-          mkdir -p _site
-          cp index.html _site/
-          cp -r css js images _site/
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v4
+      - name: Install and build
+        run: |
+          npm ci
+          npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: _site
+          path: dist
 
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
