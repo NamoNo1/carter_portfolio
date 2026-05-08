@@ -40,8 +40,8 @@ export default function Experience() {
             <div className="timeline-marker" aria-hidden="true"></div>
             <div className="timeline-body">
               <h3>กำลังเข้าศึกษาระดับปริญญาตรี</h3>
-              <p className="timeline-place">สาขาวิศวกรรมซอฟต์แวร์ (ชั้นปีที่ 1) · เริ่ม 2026</p>
-              <p>กำลังเข้าศึกษาในระดับอุดมศึกษา สายวิศวกรรมซอฟต์แวร์</p>
+              <p className="timeline-place">สาขาวิทยาการคอมพิวเตอร์ (ชั้นปีที่ 1) · เริ่ม 2026</p>
+              <p>กำลังเข้าศึกษาในระดับอุดมศึกษา สาย Computer Science</p>
             </div>
           </li>
           <li className="timeline-item">
